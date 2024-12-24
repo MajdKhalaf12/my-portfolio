@@ -21,6 +21,8 @@ export const DATA = {
     "Node.js",
     "Java",
     "C++",
+    "Flutter",
+    "Laravel",
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -145,36 +147,22 @@ export const DATA = {
       video: "",
     },
     {
-      title: "Magic UI",
-      href: "https://magicui.design",
-      dates: "June 2023 - Present",
+      title: "Alphazed website",
+      href: "https://www.figma.com/proto/0pt6pbecBvyalfYPUoBrFl/Alphazed-website?page-id=0%3A1&node-id=1-22149&viewport=1575%2C-119%2C0.32&t=KRuMj7BzR6sFBzM9-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A22149",
+      dates: "2nd July 2024",
       active: true,
       description:
-        "Designed, developed and sold animated UI components for developers.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
-      ],
+        "Design Training non-official website for alphazed, teaching arabic app using gamified learning.",
+      technologies: ["Figma"],
       links: [
         {
           type: "Website",
-          href: "https://magicui.design",
+          href: "https://www.figma.com/proto/0pt6pbecBvyalfYPUoBrFl/Alphazed-website?page-id=0%3A1&node-id=1-22149&viewport=1575%2C-119%2C0.32&t=KRuMj7BzR6sFBzM9-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A22149",
           icon: <Icons.globe className="size-3" />,
         },
-        {
-          type: "Source",
-          href: "https://github.com/magicuidesign/magicui",
-          icon: <Icons.github className="size-3" />,
-        },
       ],
-      image: "",
-      video: "https://cdn.magicui.design/bento-grid.mp4",
+      image: "/alphazed.png",
+      video: "",
     },
     {
       title: "llm.report",
