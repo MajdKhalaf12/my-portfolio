@@ -1,5 +1,5 @@
 import { GlobeIcon, MailIcon } from "lucide-react";
-import { FaFigma } from "react-icons/fa";
+import { FaFigma, FaTelegramPlane } from "react-icons/fa";
 
 export type IconProps = React.HTMLAttributes<SVGElement>;
 
@@ -221,5 +221,6 @@ export const Icons = {
       />
     </svg>
   ),
-  figma: FaFigma ,
+  figma: FaFigma,
+  telegram: FaTelegramPlane,
 };
