@@ -131,7 +131,6 @@ export const DATA = {
         "Figma",
         "React.js",
         "Typescript",
-        "Directus",
         "TailwindCSS",
         "Daisy UI",
         "Fillout Forms",
@@ -191,6 +190,15 @@ export const DATA = {
       ],
       image: "",
       video: "/tap4speed.mp4",
+    },
+  ],
+  testimonials: [
+    {
+      quote:
+        "Majd Al Khalaf did an excellent job designing image assets for my game. He was creative, responsive, and fast, delivering high-quality work that exceeded my expectations. I highly recommend him for any design project.",
+      name: "Baraa Halabi",
+      designation: "Game Developer at Gamio",
+      src: "/baraaHalabi.png",
     },
   ],
   hackathons: [
