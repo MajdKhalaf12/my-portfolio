@@ -126,10 +126,10 @@ export const DATA = {
       dates: "SEP 2024 - OCT 2024",
       active: true,
       description:
-        "With the release of the [OpenAI GPT Store](https://openai.com/blog/introducing-the-gpt-store), I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
+        "Hitos connects doctors, pharmacists, and medical professionals to solve complex cases. With an intuitive interface, it supports global consultations, advanced diagnostics, and learning opportunities for students and experts alike—ensuring precise diagnoses and innovative treatments.",
       technologies: [
         "Figma",
-        "Reactjs",
+        "React.js",
         "Typescript",
         "Directus",
         "TailwindCSS",
@@ -168,6 +168,29 @@ export const DATA = {
       ],
       image: "/alphazed.png",
       video: "",
+    },
+    {
+      title: "T4 Speed Game assets",
+      href: "https://play.google.com/store/apps/details?id=app.gamio.tap4speed",
+      dates: "Mar 3  - May 25 ",
+      active: true,
+      description:
+        "Cooperated  with Gamio team to design 7 Races, and 30 new special Cars using adobe illustrator to be used later in Unity.",
+      technologies: ["Adobe Illustrator"],
+      links: [
+        {
+          type: "Google Play",
+          href: "https://play.google.com/store/apps/details?id=app.gamio.tap4speed",
+          icon: <Icons.googlePlay className="size-3" />,
+        },
+        {
+          type: "Video",
+          href: "https://youtu.be/R0Y_WzMF6YI",
+          icon: <Icons.youtube className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "/tap4speed.mp4",
     },
   ],
   hackathons: [

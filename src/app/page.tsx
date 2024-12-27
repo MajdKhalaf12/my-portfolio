@@ -206,7 +206,7 @@ export default function Page() {
                 Get in Touch
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Want to chat? Just shoot me a dm{" "}
+                Want to chat? Just shoot me on{" "}
                 <Link
                   href={DATA.contact.social.Telegram.url}
                   className="text-blue-500 hover:underline"
