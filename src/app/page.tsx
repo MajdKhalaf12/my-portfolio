@@ -196,6 +196,26 @@ export default function Page() {
           </BlurFade>
         </div>
       </section> */}
+
+      <section id="testimonials">
+        <BlurFade delay={BLUR_FADE_DELAY * 11}>
+          <div className="flex flex-col items-center justify-center space-y-4 text-center">
+            <div className="space-y-2">
+              <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+                Testimonials
+              </div>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                What did they say About me
+              </h2>
+            </div>
+          </div>
+        </BlurFade>
+
+        <BlurFade>
+          <AnimatedTestimonials testimonials={[...DATA.testimonials]} />
+        </BlurFade>
+      </section>
+
       <section id="contact">
         <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 16}>
@@ -219,10 +239,6 @@ export default function Page() {
             </div>
           </BlurFade>
         </div>
-      </section>
-
-      <section>
-        <AnimatedTestimonials testimonials={[...DATA.testimonials]}/>
       </section>
     </main>
   );
