@@ -200,6 +200,12 @@ export const DATA = {
       designation: "Game Developer at Gamio",
       src: "/baraaHalabi.png",
     },
+    {
+      quote: "Majd was an exceptional team member. He was a quick learner and coder, UI/UX design innovative, consistently delivering user-friendly and visually appealing interfaces. His logical thinking and problem-solving abilities stood out, as did his collaborative nature and strong teamwork. I highly recommend him for any role.He was a valuable asset to our company and will undoubtedly excel in any future endeavor." ,
+      name: "Shareef Al Hussami",
+      designation: "CEO At SR Software",
+      src: "https://media.licdn.com/dms/image/v2/D560BAQFEzrVNwzYs0w/company-logo_200_200/company-logo_200_200/0/1730729015896?e=1742428800&v=beta&t=D7oX_FaI5HbBEKsrDUfd2aOxi_9QMgQDFkYjb16QhNY",
+    },
   ],
   hackathons: [
     {
