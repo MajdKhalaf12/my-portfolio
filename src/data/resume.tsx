@@ -169,7 +169,7 @@ export const DATA = {
       video: "",
     },
     {
-      title: "T4 Speed Game assets",
+      title: "Tap4Speed Game assets",
       href: "https://play.google.com/store/apps/details?id=app.gamio.tap4speed",
       dates: "Mar 3  - May 25 ",
       active: true,
@@ -187,6 +187,11 @@ export const DATA = {
           href: "https://youtu.be/R0Y_WzMF6YI",
           icon: <Icons.youtube className="size-3" />,
         },
+        {
+          type: "Behance",
+          href: "https://www.behance.net/gallery/216413443/Tap4Speed-Game-assets",
+          icon: <Icons.behance className="size-3" />,
+        },
       ],
       image: "",
       video: "/tap4speed.mp4",
@@ -201,7 +206,8 @@ export const DATA = {
       src: "/baraaHalabi.png",
     },
     {
-      quote: "Majd was an exceptional team member. He was a quick learner and coder, UI/UX design innovative, consistently delivering user-friendly and visually appealing interfaces. His logical thinking and problem-solving abilities stood out, as did his collaborative nature and strong teamwork. I highly recommend him for any role.He was a valuable asset to our company and will undoubtedly excel in any future endeavor." ,
+      quote:
+        "Majd was an exceptional team member. He was a quick learner and coder, UI/UX design innovative, consistently delivering user-friendly and visually appealing interfaces. His logical thinking and problem-solving abilities stood out, as did his collaborative nature and strong teamwork. I highly recommend him for any role.He was a valuable asset to our company and will undoubtedly excel in any future endeavor.",
       name: "Shareef Al Hussami",
       designation: "CEO At SR Software",
       src: "/SRsoftware.png",

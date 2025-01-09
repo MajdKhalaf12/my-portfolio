@@ -1,6 +1,7 @@
 import { GlobeIcon, MailIcon } from "lucide-react";
 import { FaFigma, FaTelegramPlane } from "react-icons/fa";
 import { PiGooglePlayLogoLight } from "react-icons/pi";
+import { LiaBehanceSquare } from "react-icons/lia";
 
 export type IconProps = React.HTMLAttributes<SVGElement>;
 
@@ -224,5 +225,6 @@ export const Icons = {
   ),
   figma: FaFigma,
   telegram: FaTelegramPlane,
-  googlePlay:PiGooglePlayLogoLight 
+  googlePlay: PiGooglePlayLogoLight,
+  behance: LiaBehanceSquare,
 };
