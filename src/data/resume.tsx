@@ -46,6 +46,13 @@ export const DATA = {
 
         navbar: true,
       },
+      Behance: {
+        name: "Behance Profile",
+        url: "https://www.behance.net/majdal-khalaf",
+        icon: Icons.behance,
+
+        navbar: true,
+      },
       Telegram: {
         name: "Telegram",
         url: "https://t.me/Majd_Al_khalaf",
