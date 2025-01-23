@@ -130,7 +130,7 @@ export const DATA = {
     {
       title: "Hitos Med",
       href: "https://hitos-med.com",
-      dates: "SEP 2024 - OCT 2024",
+      dates: "2024 Sep - Oct",
       active: true,
       description:
         "Hitos connects doctors, pharmacists, and medical professionals to solve complex cases. With an intuitive interface, it supports global consultations, advanced diagnostics, and learning opportunities for students and experts alike—ensuring precise diagnoses and innovative treatments.",
@@ -178,7 +178,7 @@ export const DATA = {
     {
       title: "Tap4Speed Game assets",
       href: "https://play.google.com/store/apps/details?id=app.gamio.tap4speed",
-      dates: "Mar 3  - May 25 ",
+      dates: "2024 Mar - May ",
       active: true,
       description:
         "Cooperated  with Gamio team to design 7 Races, and 30 new special Cars using adobe illustrator to be used later in Unity.",
@@ -202,6 +202,24 @@ export const DATA = {
       ],
       image: "",
       video: "/tap4speed.mp4",
+    },
+
+    {
+      title: "NourNutri Website",
+      href: "https://play.google.com/store/apps/details?id=app.gamio.tap4speed",
+      dates: "2024 Dec 20  - Dec 25 ",
+      active: true,
+      description:
+  "",   technologies: ["Figma"],
+      links: [
+        {
+          type: "Design",
+          href: "https://www.figma.com/design/fwJW7y3xOlT0N88liJh087/NourNutri?node-id=0-1&t=8NXzFXVri0KSuMLx-1",
+          icon: <Icons.figma className="size-3" />,
+        },
+      ],
+      image: "/NourNutri.png",
+      video: "",
     },
   ],
   testimonials: [
