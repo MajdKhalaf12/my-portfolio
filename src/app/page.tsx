@@ -6,7 +6,9 @@ import { ResumeCard } from "@/components/resume-card";
 import { AnimatedTestimonials } from "@/components/ui/animated-testimonials";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { DATA } from "@/data/resume";
+import { Box } from "lucide-react";
 import Link from "next/link";
 import Markdown from "react-markdown";
 
@@ -132,7 +134,7 @@ export default function Page() {
             </div>
           </BlurFade>
           <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
-            {DATA.projects.map((project, id) => (
+            {DATA.projects.slice(0, 4).map((project, id) => (
               <BlurFade
                 key={project.title}
                 delay={BLUR_FADE_DELAY * 12 + id * 0.05}
@@ -151,6 +153,17 @@ export default function Page() {
               </BlurFade>
             ))}
           </div>
+          <BlurFade
+            className="w-full justify-center flex flex-col"
+            delay={BLUR_FADE_DELAY}
+          >
+            <Link href="/projects" className="place-self-center">
+              <Button className="gap-3 ">
+                <Box className="size-4" />
+                checkout all Projects
+              </Button>
+            </Link>
+          </BlurFade>
         </div>
       </section>
       {/* <section id="hackathons">

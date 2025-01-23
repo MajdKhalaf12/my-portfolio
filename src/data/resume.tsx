@@ -1,6 +1,5 @@
 import { Icons } from "@/components/icons";
-import { HomeIcon, NotebookIcon } from "lucide-react";
-
+import { Box, HomeIcon, NotebookIcon } from "lucide-react";
 export const DATA = {
   name: "Majd Al-Khalaf",
   initials: "MK",
@@ -27,6 +26,7 @@ export const DATA = {
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/blog", icon: NotebookIcon, label: "Blog" },
+    { href: "/projects", icon: Box, label: "Projects" },
   ],
   contact: {
     email: "majd03.hussain@gmail.com",
@@ -209,8 +209,8 @@ export const DATA = {
       href: "https://play.google.com/store/apps/details?id=app.gamio.tap4speed",
       dates: "2024 Dec 20  - Dec 25 ",
       active: true,
-      description:
-  "",   technologies: ["Figma"],
+      description: "",
+      technologies: ["Figma"],
       links: [
         {
           type: "Design",
