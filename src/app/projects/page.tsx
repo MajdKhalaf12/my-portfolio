@@ -4,8 +4,8 @@ import { DATA } from "@/data/resume";
 import React from "react";
 
 export const metadata = {
-  title: "Blog",
-  description: "My thoughts on software development, life, and more.",
+  title: "Projects",
+  description: "My Projects in software development.",
 };
 
 const ProjectsPage = () => {

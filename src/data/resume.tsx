@@ -3,9 +3,8 @@ import { Box, HomeIcon, NotebookIcon } from "lucide-react";
 export const DATA = {
   name: "Majd Al-Khalaf",
   initials: "MK",
-  url: "https://my-portfolio-kappa-kohl-91.vercel.app/",
+  url: "https://majdkhalaf12.vercel.app/",
   location: "Damascus Syria",
-  locationLink: "https://www.google.com/maps/place/sanfrancisco",
   description:
     "Frontend Developer and Computer Science Student. I love Cyber Security and helping people.",
   summary:
@@ -85,9 +84,10 @@ export const DATA = {
       title: "Front end Developer",
       logoUrl:
         "https://media.licdn.com/dms/image/v2/D560BAQFEzrVNwzYs0w/company-logo_200_200/company-logo_200_200/0/1730729015896?e=1742428800&v=beta&t=D7oX_FaI5HbBEKsrDUfd2aOxi_9QMgQDFkYjb16QhNY",
-      start: "AUG 2024",
-      end: "Present",
-      description: "",
+      start: "Aug 2024",
+      end: "Dec 2024",
+      description:
+        "As a Frontend Developer at SR Software, I built and optimized user interfaces using React, working on projects like a POS system, an e-commerce app, and a school desktop app with Electron.js. I collaborated with backend and frontend teams, trained in Laravel, and mastered fast problem-solving under tight deadlines—often completing major tasks overnight. In my final month, I led the frontend team, coordinating development efforts and ensuring efficient project execution. This experience strengthened my leadership, adaptability, and ability to deliver high-quality solutions under pressure.",
     },
     {
       company: "OTOM8",
@@ -96,8 +96,8 @@ export const DATA = {
       location: "Remote",
       title: "Graphic Designer, UI/UX",
       logoUrl: "",
-      start: "OCT 2023",
-      end: "MAY 2024",
+      start: "Oct 2023",
+      end: "May 2024",
       description:
         "As a graphic designer, I thrive on curiosity and continuous learning. Collaborating with industry leaders, I've crafted authentic designs for Ejet Alkaharaba, Cialdini Arabia, Misto Prenuer, and Almountada. Highlights include branding solutions, social media content, UI design, and animations that resonate with authenticity and creativity. Driven by a passion for learning and excellence, I bring creativity and authenticity to every project.",
     },
@@ -109,8 +109,8 @@ export const DATA = {
       title: "Robotics Coach",
       logoUrl:
         "https://media.licdn.com/dms/image/v2/C4E0BAQGusZs-Xpefiw/company-logo_200_200/company-logo_200_200/0/1663594560508?e=1742428800&v=beta&t=d7_JNEQYFfJfcdVW9awIN6E59GljVqyLQU693pNu9gk",
-      start: "JAN 2023",
-      end: "MAR 2023",
+      start: "Jan 2023",
+      end: "Mar 2023",
       description:
         "As a member of SyBots Robotics, I learned how to use the REV kit Robotics and code a basic robot using Java. I also participated in organizing an Open Day event, where I demonstrated my leadership and communication skills by explaining the robotics concepts and projects to the visitors. I contributed to creating creative content for the SyBots website and social media platforms, such as videos, posters, and articles. I learned how to organize meetings effectively and efficiently, as well as how to give classes and train other students on teaching robotics. I also realized the importance of preparation and listening in order to learn more and improve my skills.",
     },
@@ -203,10 +203,9 @@ export const DATA = {
       image: "",
       video: "/tap4speed.mp4",
     },
-
     {
       title: "NourNutri Website",
-      href: "https://play.google.com/store/apps/details?id=app.gamio.tap4speed",
+      href: "https://www.figma.com/design/fwJW7y3xOlT0N88liJh087/NourNutri?node-id=0-1&t=8NXzFXVri0KSuMLx-1",
       dates: "2024 Dec 20  - Dec 25 ",
       active: true,
       description: "",
@@ -219,6 +218,57 @@ export const DATA = {
         },
       ],
       image: "/NourNutri.png",
+      video: "",
+    },
+    {
+      title: "Almountada Logo Design",
+      href: "https://www.behance.net/gallery/215564797/Almountada-Logo-Design",
+      dates: "2024 Mar - Apr ",
+      active: true,
+      description: "",
+      technologies: ["Adobe Illustrator"],
+      links: [
+        {
+          type: "Behance",
+          href: "https://www.behance.net/gallery/215564797/Almountada-Logo-Design",
+          icon: <Icons.behance className="size-3" />,
+        },
+      ],
+      image: "/AlmountadaLogos.png",
+      video: "",
+    },
+    {
+      title: "Almountada Social Media Posts",
+      href: "https://www.behance.net/gallery/218474345/Almountada-social-media-designs",
+      dates: "2024 Mar - Apr ",
+      active: true,
+      description: "",
+      technologies: ["Adobe Illustrator"],
+      links: [
+        {
+          type: "Behance",
+          href: "https://www.behance.net/gallery/218474345/Almountada-social-media-designs",
+          icon: <Icons.behance className="size-3" />,
+        },
+      ],
+      image: "/almountadaCover.png",
+      video: "",
+    },
+    {
+      title: "Ejet Elkahraba full project",
+      href: "https://www.behance.net/gallery/218482151/Ejet-elkahraba-Project",
+      dates: "2023 Nov - 2024 Apr",
+      active: true,
+      description: "",
+      technologies: ["Adobe Illustrator"],
+      links: [
+        {
+          type: "Behance",
+          href: "https://www.behance.net/gallery/218482151/Ejet-elkahraba-Project",
+          icon: <Icons.behance className="size-3" />,
+        },
+      ],
+      image: "/ejetElkahraba.png",
       video: "",
     },
   ],
