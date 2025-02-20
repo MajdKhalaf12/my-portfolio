@@ -10,7 +10,7 @@ export const DATA = {
   summary:
     "I am a Computer Science student at [Damascus University](#education) with a passion for blending creativity and technology. With experience in front-end development and graphic design, I specialize in React.js, UI design, and motion graphics, having worked on impactful projects for brands like Ejet Alkaharaba and Cialdini Arabia. Currently, I am focused on advancing my skills in Laravel and Flutter while exploring the integration of AI with cybersecurity to develop smarter, more secure solutions.",
   avatarUrl:
-    "https://media.licdn.com/dms/image/v2/D4E03AQFSsWwQeXRuGw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1683307106184?e=1740009600&v=beta&t=FpHu9PJbmjtNEPrvr53P089D2pRtRTdD4rcoDP9b9Ew",
+    "https://media.licdn.com/dms/image/v2/D4D03AQEiuOAAbjg_sA/profile-displayphoto-shrink_800_800/B4DZTvCVYtHYAc-/0/1739177156199?e=1745452800&v=beta&t=9waKhB_7sHkCWmctzoS9jwUzh1sYf4l2YIbkVGSX_ko",
   skills: [
     "React",
     "Next.js",

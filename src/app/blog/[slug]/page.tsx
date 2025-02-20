@@ -88,6 +88,7 @@ export default async function Blog({
           }),
         }}
       />
+      <img src={post.metadata.image} className="rounded-sm mb-4" />
       <h1 className="title font-medium text-2xl tracking-tighter max-w-[650px]">
         {post.metadata.title}
       </h1>

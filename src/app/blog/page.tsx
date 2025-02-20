@@ -32,7 +32,20 @@ export default async function BlogPage() {
               className="flex flex-col space-y-1 mb-4"
               href={`/blog/${post.slug}`}
             >
-              <div className="w-full flex flex-col">
+          
+
+              <div className="w-full flex flex-col border p-3 rounded-md hover:bg-gradient-to-tl hover:from-gray-500/20 hover:via-transparent hover:to-transperant">
+
+              {post.metadata.image && (
+                <div className="relative mb-3 w-full h-40 overflow-hidden rounded-md ">
+                  <img
+                    src={post.metadata.image}
+                    alt={post.metadata.title}
+                    className="transition-opacity duration-300 group-hover:opacity-80"
+                  />
+                </div>
+              )}
+
                 <p className="tracking-tight">{post.metadata.title}</p>
                 <p className="h-6 text-xs text-muted-foreground">
                   {post.metadata.publishedAt}
