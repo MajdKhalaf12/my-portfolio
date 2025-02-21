@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "postinstall": "pnp dlx prisma generate",
+    "postinstall": "pnpm dlx prisma generate",
     "lint": "next lint"
   },
   "dependencies": {
