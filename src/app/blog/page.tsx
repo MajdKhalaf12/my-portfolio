@@ -1,5 +1,6 @@
 import BlurFade from "@/components/magicui/blur-fade";
-import { getBlogPosts } from "@/data/blog";
+import { getAllPosts } from "@/data/blog";
+import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
@@ -10,7 +11,7 @@ export const metadata = {
 const BLUR_FADE_DELAY = 0.04;
 
 export default async function BlogPage() {
-  const posts = await getBlogPosts();
+  const posts = await getAllPosts();
 
   return (
     <section>
@@ -32,23 +33,25 @@ export default async function BlogPage() {
               className="flex flex-col space-y-1 mb-4"
               href={`/blog/${post.slug}`}
             >
-          
-
-              <div className="w-full flex flex-col border p-3 rounded-md hover:bg-gradient-to-tl hover:from-gray-500/20 hover:via-transparent hover:to-transperant">
-
-              {post.metadata.image && (
-                <div className="relative mb-3 w-full h-40 overflow-hidden rounded-md ">
-                  <img
-                    src={post.metadata.image}
-                    alt={post.metadata.title}
-                    className="transition-opacity duration-300 group-hover:opacity-80"
-                  />
-                </div>
-              )}
+              <div className="w-full flex flex-col border p-3 rounded-md hover:bg-gradient-to-tl hover:from-gray-500/10 hover:via-transparent hover:to-transperant">
+                {post.metadata?.image && (
+                  <div className="relative mb-3 w-full h-40 overflow-hidden rounded-md ">
+                    <Image
+                      fill
+                      src={post.metadata.image}
+                      alt={post.metadata.title}
+                      className="object-cover transition-opacity duration-300 group-hover:opacity-80"
+                    />
+                  </div>
+                )}
 
                 <p className="tracking-tight">{post.metadata.title}</p>
                 <p className="h-6 text-xs text-muted-foreground">
-                  {post.metadata.publishedAt}
+                  {
+                    new Date(post.metadata.publishedAt)
+                      .toISOString()
+                      .split("T")[0]
+                  }
                 </p>
               </div>
             </Link>

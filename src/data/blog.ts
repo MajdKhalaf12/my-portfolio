@@ -1,11 +1,11 @@
 import fs from "fs";
-import matter from "gray-matter";
 import path from "path";
 import rehypePrettyCode from "rehype-pretty-code";
 import rehypeStringify from "rehype-stringify";
 import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";
 import { unified } from "unified";
+import prisma from "./prisma"; // Import Prisma Accelerate client
 
 type Metadata = {
   title: string;
@@ -37,32 +37,48 @@ export async function markdownToHTML(markdown: string) {
 }
 
 export async function getPost(slug: string) {
-  const filePath = path.join("content", `${slug}.mdx`);
-  let source = fs.readFileSync(filePath, "utf-8");
-  const { content: rawContent, data: metadata } = matter(source);
+  // Retrieve a post from the database by slug
+  const post = await prisma.post.findUnique({
+    where: { slug },
+  });
+
+  if (!post) {
+    throw new Error(`Post with slug ${slug} not found`);
+  }
+
+  let rawContent = post.content
+  rawContent = rawContent.replace(/\\n/g, "\n");
+
   const content = await markdownToHTML(rawContent);
+
   return {
-    source: content,
-    metadata,
+    source: content, 
+    metadata: {
+      title: post.title,
+      publishedAt: post.publishedAt.toString(),
+      summary: post.summary,
+      image: post.image,
+    },
     slug,
   };
 }
 
-async function getAllPosts(dir: string) {
-  let mdxFiles = getMDXFiles(dir);
-  return Promise.all(
-    mdxFiles.map(async (file) => {
-      let slug = path.basename(file, path.extname(file));
-      let { metadata, source } = await getPost(slug);
-      return {
-        metadata,
-        slug,
-        source,
-      };
-    })
-  );
-}
 
-export async function getBlogPosts() {
-  return getAllPosts(path.join(process.cwd(), "content"));
+export async function getAllPosts() {
+  const posts = await prisma.post.findMany({
+    orderBy: {
+      publishedAt: "desc",
+    },
+  });
+
+  return posts.map((post) => ({
+    metadata: {
+      title: post.title,
+      publishedAt: post.publishedAt.toString(),
+      summary: post.summary,
+      image: post.image,
+    },
+    slug: post.slug,
+    source: post.content,
+  }));
 }

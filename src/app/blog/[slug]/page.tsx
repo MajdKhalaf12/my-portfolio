@@ -1,12 +1,13 @@
-import { getBlogPosts, getPost } from "@/data/blog";
+import { getAllPosts, getPost } from "@/data/blog";
 import { DATA } from "@/data/resume";
 import { formatDate } from "@/lib/utils";
 import type { Metadata } from "next";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
 
 export async function generateStaticParams() {
-  const posts = await getBlogPosts();
+  const posts = await getAllPosts();
   return posts.map((post) => ({ slug: post.slug }));
 }
 
@@ -88,7 +89,15 @@ export default async function Blog({
           }),
         }}
       />
-      <img src={post.metadata.image} className="rounded-sm mb-4" />
+      {post.metadata.image && (
+        <Image
+          width={800}
+          height={10}
+          src={post.metadata.image}
+          alt={post.metadata.image}
+          className="rounded-sm mb-4"
+        />
+      )}
       <h1 className="title font-medium text-2xl tracking-tighter max-w-[650px]">
         {post.metadata.title}
       </h1>
