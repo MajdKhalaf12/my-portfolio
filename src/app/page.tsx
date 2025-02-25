@@ -166,7 +166,7 @@ export default function Page() {
           </BlurFade>
         </div>
       </section>
-      {/* <section id="hackathons">
+      <section id="hackathons">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 13}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
@@ -175,15 +175,15 @@ export default function Page() {
                   Hackathons
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  I like building things
+                  I love creating innovative projects
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  During my time in university, I attended{" "}
-                  {DATA.hackathons.length}+ hackathons. People from around the
-                  country would come together and build incredible things in 2-3
-                  days. It was eye-opening to see the endless possibilities
-                  brought to life by a group of motivated and passionate
-                  individuals.
+                  Throughout my university years, I participated in{" "}
+                  {DATA.hackathons.length}+ hackathons. These events brought
+                  together talented individuals from across the country, all
+                  working to develop groundbreaking ideas in just a few days.
+                  Witnessing the power of collaboration and creativity was truly
+                  inspiring.
                 </p>
               </div>
             </div>
@@ -208,7 +208,7 @@ export default function Page() {
             </ul>
           </BlurFade>
         </div>
-      </section> */}
+      </section>
 
       <section id="testimonials">
         <BlurFade delay={BLUR_FADE_DELAY * 11}>
