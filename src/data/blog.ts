@@ -40,19 +40,20 @@ export async function getPost(slug: string) {
   // Retrieve a post from the database by slug
   const post = await prisma.post.findUnique({
     where: { slug },
+    cacheStrategy: { ttl: 0 },
   });
 
   if (!post) {
     throw new Error(`Post with slug ${slug} not found`);
   }
 
-  let rawContent = post.content
+  let rawContent = post.content;
   rawContent = rawContent.replace(/\\n/g, "\n");
 
   const content = await markdownToHTML(rawContent);
 
   return {
-    source: content, 
+    source: content,
     metadata: {
       title: post.title,
       publishedAt: post.publishedAt.toString(),
@@ -63,12 +64,12 @@ export async function getPost(slug: string) {
   };
 }
 
-
 export async function getAllPosts() {
   const posts = await prisma.post.findMany({
     orderBy: {
       publishedAt: "desc",
     },
+    cacheStrategy: { ttl: 0 },
   });
 
   return posts.map((post) => ({
