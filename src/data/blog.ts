@@ -7,17 +7,6 @@ import remarkRehype from "remark-rehype";
 import { unified } from "unified";
 import prisma from "./prisma"; // Import Prisma Accelerate client
 
-type Metadata = {
-  title: string;
-  publishedAt: string;
-  summary: string;
-  image?: string;
-};
-
-function getMDXFiles(dir: string) {
-  return fs.readdirSync(dir).filter((file) => path.extname(file) === ".mdx");
-}
-
 export async function markdownToHTML(markdown: string) {
   const p = await unified()
     .use(remarkParse)
